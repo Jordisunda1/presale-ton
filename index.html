@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TON Airdrop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Claim Your TON Airdrop</h1>
+        <button id="connect-wallet">Connect Wallet</button>
+
+        <div id="airdrop-section" style="display: none;">
+            <button id="claim-airdrop">Claim Airdrop</button>
+            <p>Your Referral Link:</p>
+            <input type="text" id="referral-link" readonly>
+            <button onclick="copyReferralLink()">Copy Link</button>
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tonconnect/ui@2.0.2/dist/bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
